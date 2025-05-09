@@ -1,0 +1,24 @@
+[mov-cli]
+version = 1
+debug = true  # Enable debug mode for more detailed output
+player = "mpv"
+quality = "auto"
+skip_update_checker = false
+auto_try_next_scraper = true
+hide_ip = true
+
+[mov-cli.ui]
+preview = true
+watch_options = true
+display_quality = false
+
+[mov-cli.plugins] 
+test = "mov-cli-test"
+films = "mov-cli-film-central"  # Ensure this matches the plugin name correctly
+
+[mov-cli.scrapers]
+test = "test.DEFAULT"
+scraper = "films"
+
+[mov-cli.http]
+timeout = 15
